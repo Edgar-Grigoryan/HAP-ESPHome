@@ -64,7 +64,7 @@ namespace esphome
       #endif
       #ifdef USE_CLIMATE
       std::vector<ClimateEntity*> climates;
-      ClimateEntity* add_climate(climate::Climate* sensorPtr);
+      ClimateEntity* add_climate(climate::Climate* climatePtr);
       #endif
     };
   }
