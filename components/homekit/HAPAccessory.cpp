@@ -59,6 +59,9 @@ namespace esphome
       #ifdef USE_SWITCH
       ESP_LOGCONFIG(TAG, "Switch HK Entities: %d", switches.size());
       #endif
+      #ifdef USE_CLIMATE
+      ESP_LOGCONFIG(TAG, "Climate HK Entities: %d", climates.size());
+      #endif
     }
     #ifdef USE_LIGHT
     LightEntity* HAPAccessory::add_light(light::LightState* lightPtr) {
